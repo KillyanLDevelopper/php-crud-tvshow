@@ -1,0 +1,44 @@
+{
+    "name": "aaimc/sae",
+    "description": "sae",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ravi0023",
+            "email": "enzo.ravignon@etudiant.univ-reims.fr"
+        },
+        {
+            "name": "lebe0069",
+            "email": "killyan.lebegue@etudiant.univ-reims.fr"
+        }
+    ],
+    "require": {
+        "ext-pdo": "*"
+    },
+
+    "scripts": {
+        "start:linux" : "bin/run-server.sh",
+        "start:windows" : "bin/run-server.bat",
+        "test:cs": "php vendor/bin/php-cs-fixer fix --dry-run --diff",
+        "fix:cs" : "php vendor/bin/php-cs-fixer fix",
+        "start" : "@start:linux",
+        "test:crud" : "php vendor/bin/codecept build",
+        "test:codecept" : "vendor/bin/codecept run",
+        "test:browse" : "php vendor/bin/codecept run Browse",
+        "clean" : "php vendor/bin/codecept clean",
+        "test": [
+            "@test:crud",
+            "@test:codecept",
+            "@test:browse"
+
+        ]
+        },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.58"
+    }
+}

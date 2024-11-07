@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+body{
+    color: black;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab";
+    background-image: url("../img/background_img.png");
+    background-repeat:repeat;
+ }
+
+header{
+    background-color: #ff0073;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style-type: none;
+    
+}
+
+.navigation {
+    display: flex;
+    flex-grow: 1;
+    font-size: 30px;
+}
+
+.fonction{
+    display: flex;
+}
+.fonction li{    
+    background-color:#33aacc;
+    border-radius: 50px;
+    padding: 5px;
+
+}
+
+.fonction .plan{
+    color: black;
+}
+.fonction .create_rdv{
+    color: black;
+}
+.fonction .edit_rdv{
+    color: black;
+}
+
+.fonction .faq{
+    color: black;
+}
+
+.Planning{
+    margin-right: 20px;
+}
+.plan{
+    margin: 20px;
+    text-decoration: none;
+}
+.cree_rdv{
+    margin-right: 20px;
+}
+
+.modif_rdv{
+    margin-right: 20px;
+}
+.create_rdv{
+    margin: 20px;
+    text-decoration: none;
+}
+.edit_rdv{
+    margin: 20px;
+    text-decoration: none;
+}
+.faq{
+    margin: 20px;
+    text-decoration: none;
+}
+
+.connexion{
+    background-color:#33aacc;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.connexion_user{
+    padding: 18px;
+}
+
+.default_img_user{
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+}
+
+.image_param{
+    width: 45px;
+    height: 45px;
+    padding: 7px;
+}
+.profil{
+    display: flex;
+    justify-content: flex-end;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin: 0px;
+    padding: 0;
+}
+.planning_title{
+    text-align: center;
+    font-size: 60px;
+}
+
+.mois_planning{
+    text-align: center;
+    font-size: 45px;
+}
+.plan_img{
+    padding: 0;
+    margin: 0;
+}
+.planning_img{
+    margin-left: 10%;
+    width: 80%;
+    height: 65%;
+}
+
+.default_connected_img_user{
+    height: 50px;
+    padding: 7px;
+}
+.pres_faq{
+    padding: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+.question_faq{
+    padding: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#faq {
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#faq h2 {
+    text-align: center;
+    color: #333;
+    font-size: 50px;
+}
+
+.faq-item {
+    margin: 15px;
+}
+
+
+.faq-item p {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.faq-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+.faq-answer {
+    padding-top: 10px;
+}
+
+#faq p {
+    font-size: 30px;
+    line-height: 1.5; 
+}
+
+.pres{
+    margin:15px;
+    font-size: 30px;
+}

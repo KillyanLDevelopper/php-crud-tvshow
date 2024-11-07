@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>
+        Cabinet Dentaire
+    </title>
+</head>
+<body>
+    <header>
+        <ul class="navigation">
+            <section class="fonction">
+                <li class="Planning">
+                    <a href="planning_connect.html" class="plan">Planning</a>
+                </li>
+                <li class="cree_rdv">
+                    <a href="prendre_rdv.html" class="create_rdv">Prendre Rendez-vous</a>
+                </li>
+                <li class="modif_rdv">
+                    <a href="modifier_rdv.html" class="edit_rdv">Modifiez Rendez-vous</a>
+                </li>
+                <li class="FAQ">
+                    <a href="FAQ.html" class="faq">F.A.Q</a>
+                </li>
+            </section>
+        </ul>
+
+        <ul class="profil">
+            
+            <li class="img_default">
+                <img src="img/user_connected.png" class="default_connected_img_user">
+            </li>
+
+            <li class="connexion_user">
+                <a href="connect.html" class="connexion">Mon compte</a>
+            </li>
+
+            <li class="img_parameter">
+                <img src="img/paramètre.png" class="image_param">
+            </li>
+        </ul>
+
+    </header>
+    <section class="pres">
+        <h1 class="pres_faq"> Présentation </h1>
+<p>
+        Le cabinet dentaire DentexPro est un cabinet dentaire moderne et innovant, dédié à offrir des soins de haute qualité pour toute la famille. Situé au cœur de la ville, notre cabinet combine des technologies de pointe avec une expertise clinique pour garantir des soins personnalisés et efficaces.
+
+        Nos Services :
+        <li>Soins dentaires généraux : Nettoyages, traitements des caries, extractions.</li>
+        <li>Esthétique dentaire : Blanchiment, facettes, restaurations esthétiques pour un sourire éclatant.</li>
+        <li>Implants dentaires : Solutions durables pour remplacer les dents manquantes avec des implants de haute précision.</li>
+        <li>Soins préventifs : Conseils personnalisés, prévention des maladies bucco-dentaires grâce à des visites régulières et des contrôles.</li>
+</p>
+    </section>
+
+    <section id="faq">
+        <h2>Questions </h2>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Comment puis-je prendre un rendez-vous ?</span>
+                <button class="faq-toggle">&#9660;</button>
+            </div>
+            <div class="faq-answer">
+                <p>Vous pouvez prendre un rendez-vous en remplissant le formulaire sur notre site et en soumettant vos informations.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Quels sont les horaires disponibles ?</span>
+                <button class="faq-toggle">&#9660;</button>
+            </div>
+            <div class="faq-answer">
+                <p>Nos horaires varient en fonction des jours. Veuillez consulter notre calendrier de rendez-vous pour plus d'informations.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Puis-je annuler mon rendez-vous ?</span>
+                <button class="faq-toggle">&#9660;</button>
+            </div>
+            <div class="faq-answer">
+                <p>Oui, vous pouvez annuler votre rendez-vous en nous contactant via le formulaire de contact.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Où se déroule le rendez-vous ?</span>
+                <button class="faq-toggle">&#9660;</button>
+            </div>
+            <div class="faq-answer">
+                <p>Les rendez-vous se déroulent à notre bureau. </p>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+        const answer = button.parentElement.nextElementSibling;
+
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none'; 
+        } else {
+            const allAnswers = document.querySelectorAll('.faq-answer');
+            allAnswers.forEach(a => a.style.display = 'none');
+
+            answer.style.display = 'block';
+        }
+    });
+});
+
+
+    </script>
+    
+</body>

@@ -1,0 +1,87 @@
+html, body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    color: white;
+}
+h1, h2, title {
+    color: red;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Copperplate Gothic Bold", sans-serif;
+}
+.content {
+    overflow-y: auto;
+    margin: 40px;
+}
+.season {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5vw;
+}
+.season__poster {
+    width: 30%;
+    max-width: 150px;
+    height: auto;
+    margin-right: 5vw;
+}
+.season__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tvshow__name {
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+.season__name {
+    font-size: 2vw;
+    font-weight: normal;
+}
+.episodes {
+    margin-top: 2vw;
+}
+.episode {
+    border-bottom: 1px solid #333;
+    padding: 1vw 0;
+    margin: 20px;
+}
+.season-details {
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
+    flex-grow: 1;
+    text-align: right;
+}
+.season-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+a h3 {
+    text-decoration: none;
+    color: white;
+}
+
+.home {
+    display: inline-flex;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    border: solid 2px #e0e0e0;
+    border-radius: 20px;
+    padding: 5px 10px;
+    gap: 20px;
+}
+a:hover{
+    color : red;
+}
+footer {
+    color: white;
+    text-align: center;
+}

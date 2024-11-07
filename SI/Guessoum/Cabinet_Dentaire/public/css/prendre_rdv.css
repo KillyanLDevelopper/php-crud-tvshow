@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    color: black;
+    background-color: rgb(253, 209, 255);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;  
+}
+
+.take_rdv {
+    background-color: white;
+    padding: 40px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 500px; 
+    box-sizing: border-box; 
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    box-sizing: border-box; 
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(223, 74, 218);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: rgb(200, 60, 200);
+}
+
+
