@@ -1,0 +1,137 @@
+html, body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color : red;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Copperplate Gothic Bold", sans-serif;
+}
+title{
+    color : red;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Copperplate Gothic Bold", sans-serif;
+}
+body{
+    flex-direction: column;
+    color: white;
+}
+.content{
+    overflow-y : auto ;
+    margin : 50px;
+}
+.serie{
+    display: flex;
+    border: solid white 1px;
+}
+.serie__poster{
+    display: flex;
+}
+.serie__name{
+    color: red;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 10px;
+}
+.serie__css{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.serie_originalName{
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+.serie_overview{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.season{
+    display: flex;
+    margin-top: 20px;
+    border: solid white 1px;
+}
+.season__poster{
+    gap: 20px;
+}
+.season__name{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer  {
+    color : white;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-underline: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:hover{
+    color : red;
+}
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .content {
+        margin: 10px;
+    }
+    .serie__name {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+    .serie_originalName {
+        font-size: 20px;
+    }
+    .serie_overview {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+    }
+    .serie__name {
+        font-size: 16px;
+    }
+    .serie_originalName {
+        font-size: 16px;
+    }
+    .serie_overview {
+        font-size: 14px;
+    }
+}
+
+
+.home {
+    display: inline-flex;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    border: solid 2px #e0e0e0;
+    border-radius: 20px;
+    padding: 5px 10px;
+    gap: 20px;
+    text-align: center;
+    justify-content: space-around;
+
+}
