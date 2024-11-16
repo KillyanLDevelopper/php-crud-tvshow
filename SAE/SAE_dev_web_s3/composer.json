@@ -1,0 +1,15 @@
+{
+    "name": "tayko/sae_dev_web_s3",
+    "autoload": {
+        "psr-4": {
+            "Tayko\\SaeDevWebS3\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lebe0069",
+            "email": "killyan.lebegue@etudiant.univ-reims.fr"
+        }
+    ],
+    "require": {}
+}
